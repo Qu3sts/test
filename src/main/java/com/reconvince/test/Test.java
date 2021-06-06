@@ -1,11 +1,20 @@
 package com.reconvince.test;
 
-public class Test {
+import org.bukkit.plugin.java.JavaPlugin;
 
-    public static void main(String[] args){
+public class Test extends JavaPlugin {
 
-        System.out.println("cock and balls");
+    @Override
+    public void onEnable() {
+        System.out.println("COCK");
+        getServer().getPluginManager().registerEvents(new WalkListener(), this);
+        getCommand("nuts").setExecutor(new CommandListener());
+        getCommand("kickme").setExecutor(new AnotherCmdListener());
+        getCommand("speed").setExecutor(new Permission());
+        getServer().getPluginManager().registerEvents(new Cocki(), this);
 
     }
+
+
 
 }

@@ -1,0 +1,7 @@
+  name: Cumballs
+  main: com.reconvince.test.Test
+  version: v1.0.0
+  commands:
+    nuts:
+    kickme:
+    speed:
