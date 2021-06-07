@@ -14,7 +14,7 @@ public class SprintListener implements Listener {
         if (player.isSprinting()) {
 
             player.getPlayer().sendMessage("Run forest, RUN!");
-            player.getPlayer().addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 200, 0));
+            player.getPlayer().addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 200, 5));
 
         } else if (!player.isSprinting()) {
             player.getPlayer().removePotionEffect(PotionEffectType.SPEED);
